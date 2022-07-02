@@ -1,0 +1,4 @@
+#!/usr/bin/zsh
+
+# Load pyenv
+eval "$(pyenv init -)"

@@ -1,0 +1,13 @@
+#!/usr/bin/zsh
+
+# Load plugins
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/web-search.zsh
+
+# zsh-syntax-highlight config
+typeset -A ZSH_HIGHLIGHT_STYLES # Declare the variable
+ZSH_HIGHLIGHT_STYLES[path]=none # Remove underline style
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
