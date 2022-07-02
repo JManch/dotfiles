@@ -3,28 +3,28 @@
 # check if we have root
 if [ `id -u` != 0 ]
 then
-    echo "Must be root to run install script"
+    echo 'Must be root to run install script'
     exit
 fi
 
 # update and upgrade
-apt update && apt upgrade -y
+apt update && apt upgrade -y && apt autoremove -y
 
-# create sudo user
-echo "Enter your username:"
-read username
-useradd $username
-useradd $username sudo
-su $username
-whoami
-
-# clone and checkout dot files repo
-git clone --bare https://github.com/JManch/dotfiles $HOME/.dotfiles
+# clone dotfiles repo
+git clone --bare https://github.com/JManch/new_dotfiles $HOME/.dotfiles
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
-# install and configure zsh
+# wsl conf
+cp $HOME/.config/wsl/wsl.conf /etc/
+
+# install zsh
 apt-get install zsh -y
-echo "export ZDOTDIR=~/.config/zsh" >> /etc/zsh/zshenv 
+echo "export ZDOTDIR=~/.config/zsh" >> /etc/zsh/zshenv
 chsh -s $(which zsh)
+./$HOME/.config/zsh/plugins/plugin-install.sh
+
+# install programs
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+apt install bat
 
