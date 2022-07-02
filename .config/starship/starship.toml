@@ -1,0 +1,197 @@
+[aws]
+style = "yellow"
+
+[azure]
+style = "blue"
+
+[[battery.display]]
+style = "red"
+
+[cmake]
+style = "blue"
+
+[cobol]
+style = "blue"
+
+[cmd_duration]
+style = "yellow"
+
+[conda]
+style = "green"
+
+[container]
+style = "red dimmed"
+
+[crystal]
+style = "red"
+
+[dart]
+style = "blue"
+
+[deno]
+style = "green"
+
+[directory]
+style = "cyan"
+
+[docker_context]
+style = "blue"
+
+[dotnet]
+style = "blue"
+
+[elixir]
+style = "purple"
+
+[elm]
+style = "cyan"
+
+[env_var] 
+style = "black dimmed"
+
+[erlang]
+style = "red"
+
+[fill]
+style = "black"
+
+[gcloud]
+style = "blue"
+
+[git_branch]
+style = "purple"
+
+[git_commit]
+style = "green"
+
+[git_state]
+style = "yellow"
+
+[git_metrics]
+disabled = false
+added_style = "green"
+deleted_style = "red"
+
+[git_status]
+style = "red"
+
+[golang]
+style = "cyan"
+
+[helm]
+style = "white"
+
+[hostname]
+style = "dimmed green"
+
+[java]
+
+[jobs]
+style = "blue"
+
+[julia]
+style = "purple"
+
+[localip]
+style = "yellow"
+
+[kotlin]
+style = "blue"
+
+[kubernetes]
+style = "cyan"
+
+[lua]
+style = "blue"
+
+[memory_usage]
+disabled = false
+threshold = 50
+style = "dimmed white"
+
+[hg_branch]
+style = "purple"
+
+[nim]
+style = "yellow"
+
+[nix_shell]
+style = "blue"
+
+[nodejs]
+style = "green"
+
+[ocaml]
+style = "yellow"
+
+[openstack]
+style = "yellow"
+
+[package]
+style = "208"
+
+[perl]
+style = "149"
+
+[php]
+style = "147"
+
+[pulumi]
+style = "5"
+
+[purescript]
+style = "white"
+
+[python]
+style = "yellow"
+
+[rlang]
+style = "blue"
+
+[red]
+style = "red"
+
+[ruby]
+style = "red"
+
+[rust]
+style = "red"
+
+[shell]
+style = "white"
+
+[shlvl]
+style = "yellow"
+
+[singularity]
+style = "dimmed blue"
+
+[status]
+style = "red"
+
+[sudo]
+style = "blue"
+
+[swift]
+
+[terraform]
+style = "105"
+
+[time]
+style = "yellow"
+
+[username]
+style_root = "red"
+style_user = "yellow"
+
+[vagrant]
+style = "cyan"
+
+[vlang]
+style = "blue"
+
+[vcsh]
+style = "black dimmed"
+
+[zig]
+style = "yellow"
