@@ -7,6 +7,9 @@ then
     exit
 fi
 
+# purge package that gives errors
+apt-get purge needrestart
+
 # update and upgrade
 apt update && apt upgrade -y && apt autoremove -y
 
@@ -17,6 +20,7 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntra
 
 # wsl conf
 cp $HOME/.config/wsl/wsl.conf /etc/
+echo "[user]\ndefault=$USER" >> /etc/wsl.conf
 
 # install zsh
 apt-get install zsh -y
@@ -26,5 +30,6 @@ chsh -s $(which zsh)
 
 # install programs
 curl -sS https://starship.rs/install.sh | sh -s -- -y
-apt install bat
+apt install bat -y
 
+exec zsh
