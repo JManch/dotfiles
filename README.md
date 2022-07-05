@@ -1,11 +1,15 @@
-# dotfiles
-
-Clone as a bare repo and use the dotfiles alias to interact.
+# Installation
 
 `git clone --bare https://github.com/JManch/dotfiles $HOME/.dotfiles && /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout`
 
-`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'` (defined in .zshrc)
+Add the following line to /etc/zsh/zshenv: `export ZDOTDIR=~/.config/zsh`
 
-Add the following line to /etc/zsh/zshenv
+Use the `dotfiles` alias defined in .zshrc to interact with the repo
 
-`export ZDOTDIR=~/.config/zsh`
+### Program list:
+- zsh
+- zsh plugins (script in ~/.config/zsh/plugins/)
+- starship
+- exa
+- bat
+- pyenv
