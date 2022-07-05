@@ -1,4 +1,4 @@
-# Installation
+# Configuration
 
 `git clone --bare https://github.com/JManch/dotfiles $HOME/.dotfiles && /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout`
 
