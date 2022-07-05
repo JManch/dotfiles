@@ -13,3 +13,4 @@ Use the `dotfiles` alias defined in .zshrc to interact with the repo
 - exa
 - bat
 - pyenv
+- tmux
