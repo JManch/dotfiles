@@ -14,3 +14,4 @@ Use the `dotfiles` alias defined in .zshrc to interact with the repo
 - bat
 - pyenv
 - tmux
+- neovim
