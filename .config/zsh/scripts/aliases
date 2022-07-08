@@ -3,5 +3,6 @@ alias la='exa -a --icons'
 alias ll='exa -la --icons'
 alias ls='exa --icons'
 alias tree='exa --tree'
-alias cat=batcat
+alias cat=bat
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias please='sudo $(fc -ln -1)'
