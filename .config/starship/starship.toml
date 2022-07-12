@@ -1,3 +1,29 @@
+add_newline = false
+format = """$username$hostname$directory$character"""
+right_format = """$all"""
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+vimcmd_replace_one_symbol = "[❮](purple)"
+vimcmd_replace_symbol = "[❮](purple)"
+vimcmd_visual_symbol = "[❮](yellow)"
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "cyan"
+
+[username]
+show_always = false
+format = "[$user]($style) in "
+style_user = "yellow"
+style_root = "red"
+
+[hostname]
+format = "[$hostname]($style) in "
+style = "dimmed green"
+
 [aws]
 style = "yellow"
 
@@ -21,6 +47,7 @@ style = "green"
 
 [container]
 style = "red dimmed"
+disabled = false
 
 [crystal]
 style = "red"
@@ -30,9 +57,6 @@ style = "blue"
 
 [deno]
 style = "green"
-
-[directory]
-style = "cyan"
 
 [docker_context]
 style = "blue"
@@ -80,9 +104,6 @@ style = "cyan"
 
 [helm]
 style = "white"
-
-[hostname]
-style = "dimmed green"
 
 [java]
 
@@ -179,10 +200,6 @@ style = "105"
 
 [time]
 style = "yellow"
-
-[username]
-style_root = "red"
-style_user = "yellow"
 
 [vagrant]
 style = "cyan"
