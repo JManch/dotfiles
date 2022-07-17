@@ -47,7 +47,7 @@ style = "green"
 
 [container]
 style = "red dimmed"
-disabled = false
+disabled = true
 
 [crystal]
 style = "red"
