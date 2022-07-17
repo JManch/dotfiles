@@ -15,12 +15,12 @@ opt.completeopt =
 
 opt.relativenumber = true               -- Show relative line numbers
 opt.number = true                       -- Show absolute line number
-opt.hlsearch = false                    -- Disable search highlighting
+-- opt.hlsearch = false                    -- Disable search highlighting
 opt.wrap = false                        -- Disable text wrapping
 opt.colorcolumn = '80'                  -- Line length marker
 opt.termguicolors = true                -- Enable 24-bit RBG colors
 opt.scrolloff = 8                       -- Scroll before reaching edge
--- opt.background = 'dark'                 -- Dark mode
+opt.background = 'dark'                 -- Dark mode
 
 -- Tabs, indent
 
