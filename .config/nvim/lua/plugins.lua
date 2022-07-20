@@ -95,7 +95,7 @@ alpha.setup(dashboard.config)
 
 -- nvim-autopairs
 
-nvim_autopairs = require('nvim-autopairs)
+nvim_autopairs = require('nvim-autopairs')
 nvim_autopairs.setup()
 
 -- nvim-lspconfig
