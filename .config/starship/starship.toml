@@ -19,10 +19,12 @@ show_always = false
 format = "[$user]($style) in "
 style_user = "yellow"
 style_root = "red"
+disabled = true
 
 [hostname]
 format = "[$hostname]($style) in "
 style = "dimmed green"
+disabled = true
 
 [aws]
 style = "yellow"
