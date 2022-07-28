@@ -12,8 +12,23 @@ paq {
     'goolord/alpha-nvim';
     'lewis6991/impatient.nvim';
     'windwp/nvim-autopairs';
-    'neovim/nvim-lspconfig';
-    'williamboman/nvim-lsp-installer';
+    'VonHeikemen/lsp-zero.nvim';
+
+    -- LSP Support
+    {'neovim/nvim-lspconfig'};
+    {'williamboman/nvim-lsp-installer'};
+
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'};
+    {'hrsh7th/cmp-buffer'};
+    {'hrsh7th/cmp-path'};
+    {'saadparwaiz1/cmp_luasnip'};
+    {'hrsh7th/cmp-nvim-lsp'};
+    {'hrsh7th/cmp-nvim-lua'};
+
+    -- Snippets
+    {'L3MON4D3/LuaSnip'};
+    {'rafamadriz/friendly-snippets'};
 }
 
 -- impatient
@@ -98,5 +113,8 @@ alpha.setup(dashboard.config)
 nvim_autopairs = require('nvim-autopairs')
 nvim_autopairs.setup()
 
--- nvim-lspconfig
+-- lsp zero
+lsp = require('lsp-zero')
+lsp.preset('recommended')
+lsp.setup()
 
