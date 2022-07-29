@@ -21,6 +21,7 @@ opt.colorcolumn = '80'                  -- Line length marker
 opt.termguicolors = true                -- Enable 24-bit RBG colors
 opt.scrolloff = 8                       -- Scroll before reaching edge
 opt.background = 'dark'                 -- Dark mode
+opt.signcolumn = 'number'               -- Move diagnostic icons
 
 -- Tabs, indent
 
@@ -34,4 +35,3 @@ opt.smartindent = true                  -- Autoindent new lines
 opt.hidden = true                       -- Enable background buffers
 opt.updatetime = 750                    -- Trigger event wait time (ms)
 
--- Startup

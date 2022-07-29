@@ -20,16 +20,16 @@ map('', '<left>', '<nop>')
 map('', '<right>', '<nop>')
 
 -- Map esc to jk
-map('i', 'kk', '<Esc>')
+map('i', 'jk', '<Esc>')
 
 -- Clear search highlighting with <leader> and c
 map('n', '<leader>c', ':nohl<CR>')
 
 -- Move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h')
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
+map('n', '<A-h>', '<C-w>h')
+map('n', '<A-j>', '<C-w>j')
+map('n', '<A-k>', '<C-w>k')
+map('n', '<A-l>', '<C-w>l')
 
 -- Change split orientation
 map('n', '<leader>tk', '<C-w>t<C-w>K') -- change vertical to horizontal
@@ -45,3 +45,12 @@ map('t', '<Esc>', '<C-\\><C-n>')                    -- exit
 map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
 map('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
+
+-- Bufferline
+map('n', '<S-l>', ':BufferLineCycleNext<CR>')
+map('n', '<S-h>', ':BufferLineCyclePrev<CR>')
+
+-- Telescope
+map('n', '<leader>ff', ':Telescope find_files<cr>')
+map('n', '<leader>fb', ':Telescope buffers<cr>')
+
